@@ -1,0 +1,83 @@
+#payment_form {
+  margin: 10px;
+}
+
+a.navbar-brand {
+  font-weight: 500;
+}
+
+body > .container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.card-container {
+  // create a box for card and form
+  min-width: 410px;
+  background: #EEE;
+  border-radius: 5px;
+  // Make the box is smaller
+  margin: 0 55px;
+  // Make some space between edge of the box and card/fields
+  padding: 16px 0;
+
+  .fields-wrapper {
+    padding: 10px 30px 0;
+  }
+
+  .form-group {
+    margin-bottom: 8px;
+  }
+
+  .form-control {
+    border: 1px solid #ddd;
+  }
+
+  p.alert.alert-danger {
+    border-radius: 4px;
+  }
+
+  p.alert.alert-danger {
+    border: none;
+  }
+
+  .row.h-separator {
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  p.hidden {
+    display: none;
+  }
+
+  p.show {
+    display: block;
+  }
+}
+@media(max-width: 750px) {
+  .card-container {
+    min-width: 250px;
+    // Make box big enought for the card
+    margin: 0 -20px;
+    // Make the space inside the big enought for the card
+    padding: 10px 0;
+
+    .fields-wrapper {
+      padding: 10px;
+    }
+
+    .jp-card-container {
+      transform: scale(0.92) !important;
+    }
+  }
+}
+@media(max-width: 1280px) {
+  .card-container {
+    margin: 0;
+  }
+}
+@media(max-width: 1440px) {
+  .card-container {
+    margin: 0;
+  }
+}
