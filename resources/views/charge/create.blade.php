@@ -12,6 +12,7 @@
             {!! form_start($form) !!}
               <div class="row">
                 <div class="col-md-12">
+                  {!! form_row($form->token) !!}
                   {!! form_row($form->card_number) !!}
                 </div>
               </div>
@@ -42,6 +43,13 @@
             {!! form_end($form, false) !!}
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-offset-2 col-md-8">
+    <div class="row" id="sample_cards">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        @include('charge.samples_card')
       </div>
     </div>
   </div>

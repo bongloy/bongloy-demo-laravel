@@ -7,10 +7,10 @@
     <meta content="" name="description" />
     <meta content="" name="author" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="bongloy-publishable-key" content="{{Config::get('bongloy.publishable_key')}}">
     <title>Bongloy Demo Laravel</title>
     <script type="text/javascript" src="https://js.bongloy.com/v3"></script>
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-    <script type="text/javascript" src="{{ mix('js/app.js') }}"></script>
   </head>
   <body>
     <div class="container-fluid">
@@ -30,13 +30,19 @@
           <div class="collapse navbar-collapse" id="main_navbar">
             <ul class="nav navbar-nav">
               <li><a target="_blank" class="nav-link" href="https://www.bongloy.com/documentation">Documentation</a></li>
-              <li><a href="https://github.com/khomsovon/bongloy-demo-laravel">Source Code</a></li>
+              <li><a target="_blank" href="https://github.com/khomsovon/bongloy-demo-laravel">Source Code</a></li>
               <li><a target="_blank" class="nav-link" href="https://www.bongloy.com">Bongloy Home</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
+      @if (session('message'))
+        <div class="alert alert-success">
+            {!! session('message') !!}
+        </div>
+      @endif
       @yield('content')
+      <script type="text/javascript" src="{{ mix('js/app.js') }}"></script>
     </div>
   </body>
 </html>

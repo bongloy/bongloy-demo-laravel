@@ -8,7 +8,14 @@ class PaymentForm extends Form
 {
     public function buildForm()
     {
-      $this->add('card_number','text',
+      $this->add('token','hidden',
+            [
+              'attr' => [
+                'data-name' => 'cardToken'
+              ]
+            ]
+          )
+          ->add('card_number','text',
             [
               'label_show' => false,
               'attr' => [

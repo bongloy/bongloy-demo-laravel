@@ -6,6 +6,7 @@
 
 require('./bootstrap');
 require('./custom');
+require('./charges');
 
 
 /**
