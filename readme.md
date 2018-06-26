@@ -13,3 +13,21 @@ You can play with the live version at [demo.bongloy.com](http://demo.bongloy.com
 ### Clone or Fork the Repo
 
     $ git clone https://github.com/khomsovon/bongloy-demo-laravel.git
+
+## Installation
+```sh
+cd bongloy-demo-laravel
+```
+```sh
+composer install
+```
+```sh
+cp .env.example .env
+```
+```sh
+php artisan key:generate
+```
+
+## Official Documentation
+
+Documentation for Bongloy can be found on the [Bongloy website](https://www.bongloy.com/documentation).
