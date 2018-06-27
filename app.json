@@ -12,10 +12,6 @@
     "logo": "https://cdn.bongloy.com/assets/logos/bongloy_logo_small-4209771772b4066de84844734e08fb179216a95a9e6f7a5c58cbb851f56c2173.png",
     "success_url": "/",
     "env": {
-      "APP_KEY": {
-            "description": "App key for Bongloy Demo Laravel",
-            "generator": "secret"
-      },
       "BONGLOY_DEFAULT_PUBLISHABLE_KEY":{
         "description": "Use this API Key for testing only. This key can safely be published in places like your Bongloy.js javascript code, or in an Android or iPhone app.",
         "required": true
