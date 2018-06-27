@@ -31,6 +31,6 @@ class ChargesController extends Controller
       'currency' => $request->currency,
       'source' => $request->token
     ]);
-    return redirect()->back()->with('message',"Your Charge was successfully created! You can view it on your Dashboard <a href='https://sandbox.bongloy.com/dashboard/charges/$charge->id' target='_blank'>here</a><div class='help-block'>Use the following credentials to sign in:<dl class='dl-horizontal'><dt>Email</dt><dd>".Config::get('bongloy.bongloy_test_account_email')."</dd><dt>Password</dt><dd>".Config::get('bongloy.bongloy_test_account_password')."</dd></dl></div>");
+    return redirect()->back()->with('message',"Your Charge was successfully created! You can view it on your Dashboard <a href='https://sandbox.bongloy.com/dashboard/charges/$charge->id' target='_blank'>here</a>");
   }
 }

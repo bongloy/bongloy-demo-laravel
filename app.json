@@ -9,15 +9,20 @@
     ],
     "website": "https://www.bongloy.com/",
     "repository": "https://github.com/khomsovon/bongloy-demo-laravel",
-    "logo": "https://cdn.bongloy.com/assets/logos/bongloy_logo-01f89eca1fc6ec70a7d1dfd1b0e9df6429e16eb283a3f01e4b07551009f2e2ee.png",
+    "logo": "https://cdn.bongloy.com/assets/logos/bongloy_logo_small-4209771772b4066de84844734e08fb179216a95a9e6f7a5c58cbb851f56c2173.png",
     "success_url": "/",
     "env": {
-      "APP_NAME"="Bongloy",
-      "APP_ENV"="dev",
       "APP_KEY": {
-            "description": "App key for Laravel",
+            "description": "App key for Bongloy Demo Laravel",
             "generator": "secret"
+      },
+      "BONGLOY_DEFAULT_PUBLISHABLE_KEY":{
+        "description": "Use this API Key for testing only. This key can safely be published in places like your Bongloy.js javascript code, or in an Android or iPhone app.",
+        "required": true
+      },
+      "BONGLOY_SECRET_KEY":{
+        "description": "Use this API Key for testing only. This key should never be published, and must be kept confidential on your own servers. These keys can perform any API request to Bongloy without restriction.",
+        "required": true
       }
-      "APP_DEBUG"=false
     }
 }
