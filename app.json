@@ -1,0 +1,23 @@
+{
+    "name": "bongloy-demo-laravel",
+    "description": "Bongloy-Demo-Laravel is a Laravel app which demonstrates how to use Bongloy",
+    "keywords": [
+        "bongloy.com",
+        "Payments Gateway",
+        "Payments infrastructure for Cambodia",
+        "Payments Online"
+    ],
+    "website": "https://www.bongloy.com/",
+    "repository": "https://github.com/khomsovon/bongloy-demo-laravel",
+    "logo": "https://cdn.bongloy.com/assets/logos/bongloy_logo-01f89eca1fc6ec70a7d1dfd1b0e9df6429e16eb283a3f01e4b07551009f2e2ee.png",
+    "success_url": "/",
+    "env": {
+      "APP_NAME"="Bongloy",
+      "APP_ENV"="dev",
+      "APP_KEY": {
+            "description": "App key for Laravel",
+            "generator": "secret"
+      }
+      "APP_DEBUG"=false
+    }
+}

@@ -27,6 +27,7 @@ cp .env.example .env
 ```sh
 php artisan key:generate
 ```
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/khomsovon/bongloy-demo-laravel)
 
 ## Official Documentation
 
