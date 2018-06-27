@@ -21,12 +21,13 @@ cd bongloy-demo-laravel
 ```sh
 composer install
 ```
+Bongloy Environment in .env file
+
 ```sh
-cp .env.example .env
+BONGLOY_DEFAULT_PUBLISHABLE_KEY = sk_test_****************************************************************
+BONGLOY_SECRET_KEY = sk_test_****************************************************************
 ```
-```sh
-php artisan key:generate
-```
+
 ## Deploy to Heroku
 
   [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/khomsovon/bongloy-demo-laravel)
