@@ -6,7 +6,7 @@ Bongloy-Demo-Laravel is a Laravel app which demonstrates how to use Bongloy. It 
 
 ## Live Demo
 
-You can play with the live version at [demo.bongloy.com](http://demo.bongloy.com)
+You can play with the live version at [demo.bongloy.com](http://bongloy-demo-laravel.herokuapp.com/)
 
 ## Local Setup
 
