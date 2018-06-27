@@ -13,11 +13,11 @@
     "success_url": "/",
     "env": {
       "BONGLOY_DEFAULT_PUBLISHABLE_KEY":{
-        "description": "Use this API Key for testing only. This key can safely be published in places like your Bongloy.js javascript code, or in an Android or iPhone app.",
+        "description": "Use this API Key for testing only. This key can safely be published in places like your Bongloy.js javascript code, or in an Android or iPhone app. Click <a href='https://sandbox.bongloy.com/dashboard/account/edit'>here</ha> to copy Publishable Key",
         "required": true
       },
       "BONGLOY_SECRET_KEY":{
-        "description": "Use this API Key for testing only. This key should never be published, and must be kept confidential on your own servers. These keys can perform any API request to Bongloy without restriction.",
+        "description": "Use this API Key for testing only. This key should never be published, and must be kept confidential on your own servers. These keys can perform any API request to Bongloy without restriction. Click <a href='https://sandbox.bongloy.com/dashboard/account/edit'>here</ha> to copy Secret Key",
         "required": true
       }
     }
