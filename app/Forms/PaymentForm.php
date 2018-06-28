@@ -15,7 +15,7 @@ class PaymentForm extends Form
               ]
             ]
           )
-          ->add('card_number','text',
+          ->add('card_number','tel',
             [
               'label_show' => false,
               'attr' => [
@@ -32,7 +32,7 @@ class PaymentForm extends Form
                 'data-name' => 'cardName'
               ]
             ])
-            ->add('expiry','text',
+            ->add('expiry','tel',
               [
                 'label_show' => false,
                 'attr' => [
@@ -40,7 +40,7 @@ class PaymentForm extends Form
                   'data-name' => 'expiry'
                 ]
               ])
-            ->add('cvc','text',
+            ->add('cvc','tel',
               [
                 'label_show' => false,
                 'attr' => [
@@ -49,7 +49,7 @@ class PaymentForm extends Form
                   'rules' => 'required|max:4'
                 ]
               ])
-            ->add('amount','text',
+            ->add('amount','tel',
               [
                 'label_show' => false,
                 'attr' => [

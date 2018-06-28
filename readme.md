@@ -26,7 +26,6 @@ Bongloy Environment in .env file
 ```sh
 BONGLOY_DEFAULT_PUBLISHABLE_KEY = sk_test_****************************************************************
 BONGLOY_SECRET_KEY = sk_test_****************************************************************
-HTTPS = false
 ```
 
 ## Deploy to Heroku

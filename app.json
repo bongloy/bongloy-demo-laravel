@@ -19,6 +19,11 @@
       "BONGLOY_SECRET_KEY":{
         "description": "Use this API Key for testing only. This key should never be published, and must be kept confidential on your own servers. These keys can perform any API request to Bongloy without restriction. Find it here in your Dashboard: https://sandbox.bongloy.com/dashboard/account/edit",
         "required": true
+      },
+      "HTTPS":{
+        "description": "Enforce https",
+        "value": true,
+        "required": true
       }
     }
 }
