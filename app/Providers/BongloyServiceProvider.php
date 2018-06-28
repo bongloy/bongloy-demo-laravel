@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\URL;
 use Stripe\Stripe As Bongloy;
 use Config;
 
@@ -15,8 +16,8 @@ class BongloyServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-      Bongloy::$apiBase = Config::get('bongloy.api_base');
-      Bongloy::$apiKey = Config::get('bongloy.api_key');
+      Bongloy::$apiBase = Config('bongloy.api_base');
+      Bongloy::$apiKey = Config('bongloy.api_key');
     }
 
     /**
@@ -26,8 +27,6 @@ class BongloyServiceProvider extends ServiceProvider
      */
     public function register()
     {
-      if(env('APP_ENV') === 'production'){
-          return redirect()->secure($request->getRequestUri());
-      }
+      //
     }
 }
