@@ -26,6 +26,8 @@ class BongloyServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+      if(env('APP_ENV') === 'production'){
+          return redirect()->secure($request->getRequestUri());
+      }
     }
 }
