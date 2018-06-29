@@ -9,6 +9,7 @@
           <hr/>
           <div class="card-wrapper"></div>
           <div class="fields-wrapper">
+            <p class="alert alert-danger hidden" role="alert" data-name="errorMessages"></p>
             {!! form_start($form) !!}
               <div class="row">
                 <div class="col-md-12">

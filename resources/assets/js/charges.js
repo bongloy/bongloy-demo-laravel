@@ -29,9 +29,9 @@ function submitHandler(event) {
 
     Bongloy.createToken('card', cardObject, function(statusCode, response) {
         // hide error messages
-        // var errorMessages = document.querySelector('[data-name="errorMessages"]');
-        // errorMessages.classList.remove('show');
-        // errorMessages.classList.add('hidden');
+        var errorMessages = document.querySelector('[data-name="errorMessages"]');
+        errorMessages.classList.remove('show');
+        errorMessages.classList.add('hidden');
 
         if (statusCode === 201) {
             // On success, set token in your checkout form
@@ -43,9 +43,9 @@ function submitHandler(event) {
             // If unsuccessful, display an error message.
             // Note that `response.error.message` contains a preformatted error message.
             document.querySelector("button[type=submit]").removeAttribute('disabled');
-            // errorMessages.classList.remove('hidden');
-            // errorMessages.classList.add('show');
-            // errorMessages.innerHTML = response.error.message;
+            errorMessages.classList.remove('hidden');
+            errorMessages.classList.add('show');
+            errorMessages.innerHTML = response.error.message;
         }
     });
 }
