@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "692e7b48c845db1093eb0485ec4c53f4",
@@ -4625,16 +4625,16 @@
         },
         {
             "name": "symfony/thanks",
-            "version": "v1.0.7",
+            "version": "v1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/thanks.git",
-                "reference": "bade4992c46ed722162694b4af8d72f84402819a"
+                "reference": "ca74c76a2a43aaa491e7a524fd235e094b1129b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/thanks/zipball/bade4992c46ed722162694b4af8d72f84402819a",
-                "reference": "bade4992c46ed722162694b4af8d72f84402819a",
+                "url": "https://api.github.com/repos/symfony/thanks/zipball/ca74c76a2a43aaa491e7a524fd235e094b1129b5",
+                "reference": "ca74c76a2a43aaa491e7a524fd235e094b1129b5",
                 "shasum": ""
             },
             "require": {
@@ -4664,7 +4664,7 @@
                 }
             ],
             "description": "Give thanks (in the form of a GitHub ⭐) to your fellow PHP package maintainers (not limited to Symfony components)!",
-            "time": "2018-03-14T21:51:39+00:00"
+            "time": "2018-08-05T16:46:52+00:00"
         },
         {
             "name": "theseer/tokenizer",
