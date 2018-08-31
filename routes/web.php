@@ -20,3 +20,5 @@ Route::post('charges', [
     'uses' => 'ChargesController@store',
     'as' => 'charge.store'
 ]);
+
+Route::post("charge", "ChargesController@charge");
