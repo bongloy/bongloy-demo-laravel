@@ -43,6 +43,7 @@ class ChargesController extends Controller
   */
   public function charge(Request $request)
   {
+
     $charge = BongloyCharge::create([
       'amount' => $this->amount_cents($request->amount),
       'currency' => $request->currency,

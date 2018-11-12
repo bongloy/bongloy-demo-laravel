@@ -183,6 +183,7 @@ return [
       */
 
       Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
+      Barryvdh\Cors\ServiceProvider::class,
       Ecrmnn\LaravelHttps\Providers\ServiceProvider::class
 
 

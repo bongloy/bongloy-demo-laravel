@@ -12,7 +12,7 @@ You can play with the live version at [bongloy-demo-laravel.herokuapp.com](http:
 
 ### Clone or Fork the Repo
 
-    $ git clone https://github.com/khomsovon/bongloy-demo-laravel.git
+    $ git clone https://github.com/bongloy/bongloy-demo-laravel.git
 
 ## Installation
 ```sh
