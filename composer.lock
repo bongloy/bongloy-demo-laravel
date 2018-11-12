@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "d5290c9675475ac163f16f6ba4ddd765",
@@ -563,16 +563,16 @@
         },
         {
             "name": "kris/laravel-form-builder",
-            "version": "1.14.0",
+            "version": "1.15.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kristijanhusak/laravel-form-builder.git",
-                "reference": "8d1c67102e20c485717823f1be02b4b2235d072f"
+                "reference": "5bb1766e90151b67e8c0a07a3492781ed801caf8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kristijanhusak/laravel-form-builder/zipball/8d1c67102e20c485717823f1be02b4b2235d072f",
-                "reference": "8d1c67102e20c485717823f1be02b4b2235d072f",
+                "url": "https://api.github.com/repos/kristijanhusak/laravel-form-builder/zipball/5bb1766e90151b67e8c0a07a3492781ed801caf8",
+                "reference": "5bb1766e90151b67e8c0a07a3492781ed801caf8",
                 "shasum": ""
             },
             "require": {
@@ -588,7 +588,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.12.x-dev"
+                    "dev-master": "1.16.x-dev"
                 },
                 "laravel": {
                     "providers": [
@@ -621,7 +621,7 @@
                 }
             ],
             "description": "Laravel form builder - symfony like",
-            "time": "2017-12-17T16:41:18+00:00"
+            "time": "2018-07-11T10:44:40+00:00"
         },
         {
             "name": "laravel/framework",
