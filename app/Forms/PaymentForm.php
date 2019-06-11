@@ -24,54 +24,30 @@ class PaymentForm extends Form
               ]
             ]
           )
-          ->add('card_name','text',
+          ->add('expiry','tel',
             [
               'label_show' => false,
               'attr' => [
-                'placeholder' => 'Name on card',
-                'data-name' => 'cardName'
+                'placeholder' => 'Expiry',
+                'data-name' => 'expiry'
               ]
             ])
-            ->add('expiry','tel',
-              [
-                'label_show' => false,
-                'attr' => [
-                  'placeholder' => 'Expiry',
-                  'data-name' => 'expiry'
-                ]
-              ])
-            ->add('cvc','tel',
-              [
-                'label_show' => false,
-                'attr' => [
-                  'placeholder' => 'CVC',
-                  'data-name' => 'cvc',
-                  'rules' => 'required|max:4'
-                ]
-              ])
-            ->add('amount','tel',
-              [
-                'label_show' => false,
-                'attr' => [
-                  'placeholder' => 'Amount',
-                  'data-name' => 'amount'
-                ]
-              ])
-            ->add('currency','text',
-              [
-                'label_show' => false,
-                'value' => 'USD',
-                'attr' => [
-                  'readonly' => true
-                ]
-              ])
-            ->add('Buy','submit',
-              [
-                'label_show' => false,
-                'value' => 'Buy',
-                'attr' => [
-                  'class' => 'btn-success form-control'
-                ]
-              ]);
+          ->add('cvc','tel',
+            [
+              'label_show' => false,
+              'attr' => [
+                'placeholder' => 'CVC',
+                'data-name' => 'cvc',
+                'rules' => 'required|max:4'
+              ]
+            ])
+          ->add('Buy','submit',
+            [
+              'label_show' => false,
+              'value' => 'Buy',
+              'attr' => [
+                'class' => 'btn-success form-control'
+              ]
+            ]);
     }
 }

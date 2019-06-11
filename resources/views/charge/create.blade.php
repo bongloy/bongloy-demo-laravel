@@ -1,56 +1,65 @@
 @extends('layouts.app')
-
 @section('content')
-  <div class="row">
-    <div class="row" id="payment_form">
-      <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-offset-3 col-lg-offset-4">
-        <div class="text-center card-container">
-          <h3>Fill out the Payment Form</h3>
-          <hr/>
-          <div class="card-wrapper"></div>
-          <div class="fields-wrapper">
-            <p class="alert alert-danger hidden" role="alert" data-name="errorMessages"></p>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+       <div class="row">
+          <div class="col">
+             <h2 class="text-center">
+                Securely collect payment information using Bongloy.js
+             </h2>
+          </div>
+       </div>
+       <div class="row">
+        <div class="col-md-3 col-sm-1"></div>
+        <div class="col">
+          <div class="alert alert-danger d-none" data-name="errorMessages" role="alert"></div>
             {!! form_start($form) !!}
-              <div class="row">
-                <div class="col-md-12">
-                  {!! form_row($form->token) !!}
-                  {!! form_row($form->card_number) !!}
-                </div>
+              <div class="form-group hidden new_charge_token">
+                 <div class="input-group">
+                      {!! form_row($form->token) !!}
+                 </div>
+              </div>
+              <div class="form-group tel required new_charge_card_number">
+                 <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i id="card-brand-icon" class="pf pf-credit-card"></i></span>
+                    </div>
+                      {!! form_widget($form->card_number) !!}
+                 </div>
+                 <small class="form-text text-muted">Use a sample card number listed below</small>
               </div>
               <div class="row">
-                <div class="col-md-12">
-                  {!! form_row($form->card_name) !!}
-                </div>
+                 <div class="col">
+                    <div class="form-group tel required new_charge_expiry">
+                       <div class="input-group">
+                        {!! form_widget($form->expiry) !!}
+                       </div>
+                    </div>
+                 </div>
+                 <div class="col">
+                    <div class="form-group tel required new_charge_cvc">
+                       <div class="input-group">
+                        {!! form_widget($form->cvc) !!}
+                       </div>
+                    </div>
+                 </div>
               </div>
               <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-6">
-                  {!! form_row($form->expiry) !!}
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-6">
-                  {!! form_row($form->cvc) !!}
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-8 col-sm-8 col-xs-12">
-                  {!! form_row($form->amount) !!}
-                </div>
-                <div class="col-md-4 col-sm-8 col-xs-12">
-                  {!! form_row($form->currency) !!}
-                </div>
-              </div>
-              <div id="submit_payment_form" class="form-group">
-                  {!! form_row($form->Buy) !!}
+                 <div class="col">
+                    <input type="submit" name="commit" value="Buy" class="btn btn btn-success float-right" data-disable-with="Buy">
+                 </div>
               </div>
             {!! form_end($form, false) !!}
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-offset-2 col-md-8">
-    <div class="row" id="sample_cards">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        @include('charge.samples_card')
+        <div class="col-md-3 col-sm-1"></div>
+       </div>
+       <div class="row">
+          <div class="col">
+             <p></p>
+            @include('charge.samples_card')
+          </div>
+       </div>
       </div>
     </div>
   </div>

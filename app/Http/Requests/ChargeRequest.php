@@ -24,11 +24,9 @@ class ChargeRequest extends FormRequest
     public function rules()
     {
         return [
-            'card_name' => 'required',
             'card_number' => 'required',
             'expiry' => 'required',
             'cvc' => 'required|max:4',
-            'amount' => 'required'
         ];
     }
 

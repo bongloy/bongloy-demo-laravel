@@ -28,8 +28,8 @@ class ChargesController extends Controller
   public function store(ChargeRequest $request)
   {
     $charge = BongloyCharge::create([
-      'amount' => $this->amount_cents($request->amount),
-      'currency' => $request->currency,
+      'amount' => $this->amount_cents(1000),
+      'currency' => 'USD',
       'source' => $request->token
     ]);
     return redirect()->back()->with('message',"Your Charge was successfully created! You can view it on your Dashboard <a href='https://sandbox.bongloy.com/dashboard/charges/$charge->id' target='_blank'>here</a>");

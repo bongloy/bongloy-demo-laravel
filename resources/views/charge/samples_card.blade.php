@@ -1,17 +1,18 @@
-<p>You can use any of the following card numbers for testing:</p>
-<table class="table table-striped table-bordered table-responsive">
+<table class="table table-bordered table-striped">
   <thead>
     <tr>
       <th>Number</th>
-      <th>Card Type</th>
-      <th>Exp Date</th>
-      <th>Security Code / PIN</th>
+      <th>Card Brand</th>
+      <th>Expiry Date</th>
+      <th>CVC</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>4242 4242 4242 4242</td>
-      <td>Visa</td>
+      <td>
+         <code>6200 0000 0000 0005</code>
+      </td>
+      <td>Union Pay</td>
       <td>{{date('m / y', strtotime(date('Y/m/d'). ' + 1 month'))}}</td>
       <td>123</td>
     </tr>

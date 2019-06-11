@@ -14,27 +14,29 @@
   </head>
   <body>
     <div class="container-fluid">
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_navbar" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{url("/")}}">Bongloy Demo Laravel</a>
-          </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="main_navbar">
-            <ul class="nav navbar-nav">
-              <li><a target="_blank" class="nav-link" href="https://www.bongloy.com/documentation">Documentation</a></li>
-              <li><a target="_blank" href="https://github.com/khomsovon/bongloy-demo-laravel">Source Code</a></li>
-              <li><a target="_blank" class="nav-link" href="https://www.bongloy.com">Bongloy Home</a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <a class="navbar-brand" href="/">
+       Bongloy Demo
+       </a>
+       <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+                <a class="nav-link" href="/">
+                Demo
+                <span class="sr-only">(current)</span>
+                </a>
+             </li>
+             <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://www.bongloy.com/documentation">Official Documentation</a>
+             </li>
+             <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://github.com/khomsovon/bongloy-demo-laravel">Source Code</a>
+             </li>
+          </ul>
+       </div>
       </nav>
       @if (session('message'))
         <div class="alert alert-success">

@@ -1,5 +1,17 @@
 // Fonts
+@font-face {
+  font-family: 'PaymentFont';
+  src: url("./fonts/paymentfont-webfont.eot");
+  src: url("./fonts/paymentfont-webfont.eot?#iefix") format('embedded-opentype'),
+       url("./fonts/paymentfont-webfont.woff") format('woff2'),
+       url("./fonts/paymentfont-webfont.woff") format('woff'),
+       url("./fonts/paymentfont-webfont.ttf") format('truetype'),
+       url("./fonts/paymentfont-webfont.svg#paymentfont-webfont") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600"); // Variables
 @import "variables"; // Bootstrap
 @import "custom";
-@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/bootstrap/dist/css/bootstrap";
+@import "paymentfont";
